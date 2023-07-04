@@ -9,7 +9,7 @@ function updateTime() {
   );
 }
 
-let newYorkElement = document.querySelector(".new_york");
+let newYorkElement = document.querySelector(".new-york");
 let newYorkDateElement = newYorkElement.querySelector(".date");
 let newYorkTimeElement = newYorkElement.querySelector(".time");
 let newYorkTime = moment().tz("America/New_York");
@@ -24,7 +24,7 @@ function updateCity(event) {
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
 
-  citiesElement.innerHTML += `<div class="city">
+  citiesElement.innerHTML = `<div class="city">
           <div>
             <h2>${cityName}</h2>
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
